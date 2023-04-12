@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
+import 'contact_form_page.dart';
+import 'contact_list_home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +13,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: const HomePage(),
+      routes: {
+        '/': (context) {
+          return ContactListHomePage();
+        },
+        'contact-form': (context) {
+          return ContactFormPage();
+        },
+      },
     );
   }
 }
