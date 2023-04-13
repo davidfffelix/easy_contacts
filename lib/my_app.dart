@@ -5,8 +5,8 @@ import 'contact_list_home_page.dart';
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  static const home = '/';
-  static const contactForm = 'contact-form';
+  static String home = '/';
+  static String contactForm = 'contact-form';
 
   @override
   Widget build(BuildContext context) {

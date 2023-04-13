@@ -5,6 +5,24 @@ import 'my_app.dart';
 class ContactListHomePage extends StatelessWidget {
   const ContactListHomePage({super.key});
 
+  static const list = [
+    {
+      'name': '',
+      'telephone': '',
+      'avatar': '',
+    },
+    {
+      'name': '',
+      'telephone': '',
+      'avatar': '',
+    },
+    {
+      'name': '',
+      'telephone': '',
+      'avatar': '',
+    }
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -17,7 +35,7 @@ class ContactListHomePage extends StatelessWidget {
               child: IconButton(
                 icon: const Icon(Icons.add),
                 onPressed: () {
-                  Navigator.of(context).pushNamed(MyApp.contactForm); 
+                  Navigator.of(context).pushNamed(MyApp.contactForm);
                   // Navigator.pushNamed(context, 'contact-form');
                 },
               ),
