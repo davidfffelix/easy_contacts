@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'my_app.dart';
+
 class ContactListHomePage extends StatelessWidget {
   const ContactListHomePage({super.key});
 
@@ -12,14 +14,11 @@ class ContactListHomePage extends StatelessWidget {
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20),
-              child: GestureDetector(
-                child: const Icon(
-                  Icons.add,
-                ),
-                onTap: () {
-                  Navigator.of(context).pushNamed(
-                    'contact-form',
-                  );
+              child: IconButton(
+                icon: const Icon(Icons.add),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(MyApp.contactForm); 
+                  // Navigator.pushNamed(context, 'contact-form');
                 },
               ),
             ),
