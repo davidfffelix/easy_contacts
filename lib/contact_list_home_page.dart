@@ -7,19 +7,19 @@ class ContactListHomePage extends StatelessWidget {
 
   static const list = [
     {
-      'name': '',
-      'telephone': '',
-      'avatar': '',
+      'name': 'David',
+      'telephone': '(11) 9 9123-0212',
+      'avatar': 'https://cdn.pixabay.com/photo/2014/04/02/14/11/male-306408_960_720.png',
     },
     {
-      'name': '',
-      'telephone': '',
-      'avatar': '',
+      'name': 'Micaele',
+      'telephone': '(11) 9 9632-7719',
+      'avatar': 'https://cdn.pixabay.com/photo/2014/04/02/14/10/female-306407_960_720.png',
     },
     {
-      'name': '',
-      'telephone': '',
-      'avatar': '',
+      'name': 'Denise',
+      'telephone': '(21) 9 7777-8218',
+      'avatar': 'https://cdn.pixabay.com/photo/2023/03/27/20/14/girl-7881639_960_720.png',
     }
   ];
 
@@ -42,7 +42,10 @@ class ContactListHomePage extends StatelessWidget {
             ),
           ],
         ),
-        body: ListView(),
+        body: ListView.builder(
+          itemCount: list.length,
+          itemBuilder: (context, index) {},
+        ),
       ),
     );
   }
