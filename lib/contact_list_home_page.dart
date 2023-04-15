@@ -44,7 +44,10 @@ class ContactListHomePage extends StatelessWidget {
         ),
         body: ListView.builder(
           itemCount: list.length,
-          itemBuilder: (context, index) {},
+          itemBuilder: (context, index) {
+            itemBuilder:
+            (context, index) {};
+          },
         ),
       ),
     );
