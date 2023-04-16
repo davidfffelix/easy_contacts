@@ -45,8 +45,24 @@ class ContactListHomePage extends StatelessWidget {
         body: ListView.builder(
           itemCount: list.length,
           itemBuilder: (context, index) {
-            itemBuilder:
-            (context, index) {};
+            var contact = list[index];
+            var avatar = CircleAvatar(
+              backgroundImage: NetworkImage(contact['avatar']!),
+            );
+            return ListTile(
+              leading: avatar,
+              title: Text(contact['name']!),
+              subtitle: Text(contact['telephone']!),
+              trailing: Container(
+                width: 100,
+                child: Row(children: [
+                  IconButton(
+                    icon: const Icon(Icons.edit),
+                    onPressed: () {},
+                  ),
+                ]),
+              ),
+            );
           },
         ),
       ),
