@@ -46,7 +46,7 @@ class ContactListHomePage extends StatelessWidget {
           itemCount: list.length,
           itemBuilder: (context, index) {
             var contact = list[index];
-            var avatar = CircleAvatar(
+            Widget avatar = CircleAvatar(
               backgroundImage: NetworkImage(contact['avatar']!),
             );
             return ListTile(
@@ -58,6 +58,10 @@ class ContactListHomePage extends StatelessWidget {
                 child: Row(children: [
                   IconButton(
                     icon: const Icon(Icons.edit),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.delete),
                     onPressed: () {},
                   ),
                 ]),
