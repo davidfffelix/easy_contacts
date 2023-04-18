@@ -8,7 +8,7 @@ class ContactFormPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Cadastro de contato'),
+          title: const Text('Cadastro de contato'),
         ),
       ),
     );

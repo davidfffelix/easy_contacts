@@ -9,23 +9,34 @@ final String createTable = '''
   )
 ''';
 
-final insert = '''
+final insert1 = '''
   INSERT INTO contact (name, telephone, email, url_avatar)
+  VALUES('José','','','')
+''';
+
+final insert2 = '''
+  INSERT INTO contact (name, telephone, email, url_avatar)
+  VALUES('Maria','','','')
+''';
+
+final insert3 = '''
+  INSERT INTO contact (name, telephone, email, url_avatar)
+  VALUES('Isabel','','','')
 ''';
 
 const list = [
   {
-    'name': 'David',
+    'name': 'José',
     'telephone': '(11) 9 9123-0212',
     'avatar': 'https://cdn.pixabay.com/photo/2014/04/02/14/11/male-306408_960_720.png',
   },
   {
-    'name': 'Micaele',
+    'name': 'Maria',
     'telephone': '(11) 9 9632-7719',
     'avatar': 'https://cdn.pixabay.com/photo/2014/04/02/14/10/female-306407_960_720.png',
   },
   {
-    'name': 'Denise',
+    'name': 'Isabel',
     'telephone': '(21) 9 7777-8218',
     'avatar': 'https://cdn.pixabay.com/photo/2023/03/27/20/14/girl-7881639_960_720.png',
   }
