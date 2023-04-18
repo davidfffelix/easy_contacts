@@ -55,16 +55,18 @@ class ContactListHomePage extends StatelessWidget {
               subtitle: Text(contact['telephone']!),
               trailing: Container(
                 width: 100,
-                child: Row(children: [
-                  IconButton(
-                    icon: const Icon(Icons.edit),
-                    onPressed: () {},
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.delete),
-                    onPressed: () {},
-                  ),
-                ]),
+                child: Row(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.edit),
+                      onPressed: () {},
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.delete),
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
               ),
             );
           },
