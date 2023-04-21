@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:path/path.dart';
+import 'package:sqflite/sqflite.dart';
+import 'database/script.dart';
 import 'my_app.dart';
 
 class ContactListHomePage extends StatelessWidget {
@@ -19,10 +21,24 @@ class ContactListHomePage extends StatelessWidget {
     {
       'name': 'Isabel',
       'telephone': '(21) 9 7777-8218',
-      'avatar': 'https://cdn.pixabay.com/photo/2023/03/27/20/14/girl-7881639_960_720.png',
+      'avatar': 'https://cdn.pixabay.com/photo/2014/04/02/14/10/female-306407_960_720.png',
     }
   ];
 
+  Future<List<Map<String, dynamic>>> _search() async {
+    String pathDataBase = join(await getDatabasesPath(), 'database');
+    Database db = await openDatabase(
+      pathDataBase,
+      version: 1,
+      onCreate: (db, v) {
+        db.execute(createTable);
+        db.execute(insert1);
+        db.execute(insert2);
+        db.execute(insert3);
+      },
+    );
+    return db.query('contact'); 
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
