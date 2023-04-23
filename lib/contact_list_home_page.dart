@@ -78,7 +78,9 @@ class ContactListHomePage extends StatelessWidget {
             ),
           );
         } else {
-          return const Scaffold();
+          return Container(
+            color: Colors.red,
+          );
         }
       },
     );
