@@ -1,12 +1,15 @@
 class Contact {
-  int id;
-  String name;
-  String telephone;
-  String email;
-  String urlAvatar;
-}
+  final int id;
+  final String name;
+  final String telephone;
+  final String email;
+  final String urlAvatar;
 
-test() {
-  var contato = Contact();
-  contato.id;
+  Contact({
+    required this.id,
+    required this.name,
+    required this.telephone,
+    required this.email,
+    required this.urlAvatar,
+  });
 }
