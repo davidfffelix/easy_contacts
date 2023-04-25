@@ -57,7 +57,7 @@ class ContactListHomePage extends StatelessWidget {
                     leading: avatar,
                     title: Text(contact['name']),
                     subtitle: Text(contact['telephone']),
-                    trailing: Container(
+                    trailing: SizedBox(
                       width: 100,
                       child: Row(
                         children: [

@@ -7,14 +7,4 @@ void main() async {
   runApp(
     const MyApp(),
   );
-
-  // // Instância do Firebase
-  // await Firebase.initializeApp();
-
-  // // Instância do Firestore
-  // FirebaseFirestore.instance.collection('contact').doc().set({
-  //   'name': 'Joaquim',
-  //   'phone': '(11) 9 9852-9632',
-  //   'e-mail': 'joaquim@email.com'
-  // });
 }
