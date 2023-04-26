@@ -32,7 +32,7 @@ class ContactListHomePage extends StatelessWidget {
           return SafeArea(
             child: Scaffold(
               appBar: AppBar(
-                title: const Text('Lista de Contatos'),
+                title: const Text('Easy Contacts'),
                 actions: [
                   Padding(
                     padding: const EdgeInsets.only(right: 20),
