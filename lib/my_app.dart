@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'contact_form_page.dart';
-import 'contact_list_home_page.dart';
+import 'home/contact_form_page.dart';
+import 'home/contact_list_home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
