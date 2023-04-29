@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import '../database/script.dart';
+import '../database/sqlite/script.dart';
 import '../my_app.dart';
 
 class ContactListHomePage extends StatelessWidget {
