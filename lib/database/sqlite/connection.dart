@@ -1,7 +1,7 @@
-import 'package:sqflite/sqflite.dart';
+// import 'package:sqflite/sqflite.dart';
 
-class Connection {
-  static Database _db;
+// class Connection {
+//   static Database _db;
 
-  static get() {}
-}
+//   static get() {}
+// }
