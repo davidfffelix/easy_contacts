@@ -1,1 +1,7 @@
-class Connection {}
+import 'package:sqflite/sqflite.dart';
+
+class Connection {
+  static Database _db;
+
+  static get() {}
+}
