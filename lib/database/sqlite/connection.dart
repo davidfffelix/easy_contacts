@@ -8,7 +8,7 @@ class Connection {
 
   static Future<Database?> get() async {
     if (_db == null) {
-      var path = join(await getDatabasesPath(), 'contacts_bank');
+      String path = join(await getDatabasesPath(), 'contacts_bank');
       _db = await openDatabase(
         path,
         version: 1,

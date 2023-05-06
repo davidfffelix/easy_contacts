@@ -1,24 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import '../database/sqlite/script.dart';
+import '../database/sqlite/connection.dart';
 import '../my_app.dart';
 
 class ContactListHomePage extends StatelessWidget {
   const ContactListHomePage({super.key});
 
   Future<List<Map<String, dynamic>>> _search() async {
-    String pathDataBase = join(await getDatabasesPath(), 'database');
-    Database db = await openDatabase(
-      pathDataBase,
-      version: 1,
-      onCreate: (db, v) {
-        db.execute(createTable);
-        db.execute(insert1);
-        db.execute(insert2);
-        db.execute(insert3);
-      },
-    );
+    Database db = Connection.get();
     return db.query('contact');
   }
 
