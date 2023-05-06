@@ -7,7 +7,7 @@ class ContactListHomePage extends StatelessWidget {
   const ContactListHomePage({super.key});
 
   Future<List<Map<String, dynamic>>> _search() async {
-    Database db = Connection.get();
+    Database db = await Connection.get();
     return db.query('contact');
   }
 
