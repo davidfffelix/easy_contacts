@@ -21,5 +21,5 @@ const String insert2 = '''
 
 const String insert3 = '''
   INSERT INTO contact (name, telephone, email, url_avatar)
-  VALUES('Isabel','(21) 9 7777-8218','isabel@email.com','https://cdn.pixabay.com/photo/2023/03/27/20/14/girl-7881639_960_720.png')
+  VALUES('Isabel','(21) 9 7777-8218','isabel@email.com','https://cdn.pixabay.com/photo/2014/04/02/14/10/female-306407_960_720.png')
 ''';
