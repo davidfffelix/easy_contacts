@@ -44,8 +44,12 @@ class ContactListHomePage extends StatelessWidget {
                   );
                   return ListTile(
                     leading: avatar,
-                    title: Text(contact['name']),
-                    subtitle: Text(contact['telephone']),
+                    title: Text(
+                      contact['name'],
+                    ),
+                    subtitle: Text(
+                      contact['telephone'],
+                    ),
                     trailing: SizedBox(
                       width: 100,
                       child: Row(
