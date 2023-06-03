@@ -11,13 +11,11 @@ class ContactDAOImpl implements ContactDAO {
 
   @override
   remove(int id) {
-    // TODO: implement remove
     throw UnimplementedError();
   }
 
   @override
   save(Contact contact) {
-    // TODO: implement save
     throw UnimplementedError();
   }
 }
